@@ -1,4 +1,4 @@
-package com.ohgiraffers.section2.liternal;
+package com.ohgiraffers.section2.variable;
 
 public class Application1 {
     public static void main(String[] args) {

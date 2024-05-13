@@ -1,4 +1,4 @@
-package com.ohgiraffers.section2.liternal;
+package com.ohgiraffers.section2.variable;
 
 public class Application3 {
     public static void main(String[] args) {
@@ -69,7 +69,7 @@ public class Application3 {
         String user_name;
         String userName;
 
-        int 나이: // 가능하지만 권장하지 않음.
+        int 나이; // 가능하지만 권장하지 않음.
 
         String s;   // 변수가 어떤의미인지 파악하기힘듬
         String name;    // 의미를 분명히 해서 변수명을 지어야 의도가 파악이 된다.
