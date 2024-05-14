@@ -17,22 +17,22 @@ public class Application3 {
         System.out.println(9 + 9 + "9"); // 189
         System.out.println(9 + "9" + 9); // 999
         System.out.println("9" + 9 + 9); // 999
-        System.out.println("9" + (9 + 9));
+        System.out.println("9" + (9 + 9)); // 918
 
         // 10 과 20의 사칙연산 + 나머지연산 결과를 출력하세요
         System.out.println("============= 10과 20의 사칙연산 결과 =============");
-        System.out.println(10 + 20);
-        System.out.println(10 - 20);
-        System.out.println(10 * 20);
-        System.out.println(10 / 20);
-        System.out.println(10 % 20);
+        System.out.println(10 + 20); // 30
+        System.out.println(10 - 20); // -10
+        System.out.println(10 * 20); // 200
+        System.out.println(10 / 20); // 0
+        System.out.println(10 % 20); // 10
 
         System.out.println("============= 10과 20의 사칙연산 결과 =============");
-        System.out.println("10과 20의 합 : " + (10 + 20));
-        System.out.println("10과 20의 차 : " + (10 - 20));
-        System.out.println("10과 20의 곱 : " + (10 * 20));
-        System.out.println("10과 20의 나누기한 몫 : " + (10 / 20));
-        System.out.println("10과 20의 나누기한 나머지 : " + (10 % 20));
+        System.out.println("10과 20의 합 : " + (10 + 20)); // 30
+        System.out.println("10과 20의 차 : " + (10 - 20)); // -10
+        System.out.println("10과 20의 곱 : " + (10 * 20)); // 200
+        System.out.println("10과 20의 나누기한 몫 : " + (10 / 20)); // 0
+        System.out.println("10과 20의 나누기한 나머지 : " + (10 % 20)); // 10
 
     }
 }
