@@ -21,5 +21,6 @@ public class Application2 {
         final int MAX_AGE = 40;
         final int MIN_AGE = 20;
 
+
     }
 }
