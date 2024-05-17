@@ -2,6 +2,8 @@ package com.ohgiraffers.section02.packaged_and_import;
 
 import com.ohgiraffers.section01.method.Calculator;
 
+import java.util.Date;
+
 import static com.ohgiraffers.section01.method.Calculator.staticMaxNumberOf;
 
 public class Application02 {
@@ -27,8 +29,7 @@ public class Application02 {
         int max2 = staticMaxNumberOf(100,200);
         System.out.println("100과 200 중 더 큰 것은? " + max2);
 
-
-
-
+        Date date = new Date();
+        java.sql.Date sqlDate = new java.sql.Date(date.getTime());
     }
 }
