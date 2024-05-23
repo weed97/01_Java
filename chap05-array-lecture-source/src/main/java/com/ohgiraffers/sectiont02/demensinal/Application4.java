@@ -23,6 +23,25 @@ public class Application4 {
 
         }
 
+        int[][] iarr2 = {{1,2,3},{4,5,6,7},{8,9,10,11,12}};
+
+        System.out.println(" ========= 가변배열 =========");
+        for (int i = 0; i < iarr2.length; i++) {
+            for (int j = 0; j < iarr2.length; j++) {
+                System.out.println(iarr[i][j] + " ");
+
+
+            }
+            System.out.println();
+
+        }
+        int[] arr1 = {1, 2, 3, 4};
+        int[] arr2 = {6, 7, 8, 9, 10};
+
+        int[][] iarr3 = {arr1, arr2};
+        System.out.println("================= 미리 할당한 배열을 이용한 방식 ===============");
+        
+
 
     }
 }
