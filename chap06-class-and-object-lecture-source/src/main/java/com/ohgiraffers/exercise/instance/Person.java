@@ -5,7 +5,7 @@ public class Person {
     String name;
     char gender;
     String maritalStatus;
-    int child;
+    String child;
 
     public void setAge(int age) {
         this.age = age;
@@ -23,11 +23,12 @@ public class Person {
         this.maritalStatus = maritalStatus;
     }
 
-    public void setChild(int child) {
+    public void setChild(String child) {
         this.child = child;
     }
 
-//    public  void personGetInfo() {
-//        return 0;
-//    }
+    public String getInfo() {
+        return "이름은 " + this.name + "입니다. " + "성별은 " + this.gender +"입니다." + "결혼 유무는 " + maritalStatus + "입니다." + "자식은 몇명인가요 " + child + "입니다. ";
+    }
+
 }
