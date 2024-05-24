@@ -6,13 +6,13 @@ public class Application {
         // 메소드의 파라미터(매개변수)
 
         /*
-        * 매개변수로 사용 가능한 자료형
-        * 1. 기본자료형
-        * 2. 기본자료형 배열
-        * 3. 클래스자료형
-        * 4. 클래스자료형 배열
-        * 5. 가변인자
-        * */
+         * 매개변수로 사용 가능한 자료형
+         * 1. 기본자료형
+         * 2. 기본자료형 배열
+         * 3. 클래스자료형
+         * 4. 클래스자료형 배열
+         * 5. 가변인자
+         * */
 
         ParameterTest pt = new ParameterTest();
 
@@ -35,7 +35,7 @@ public class Application {
         }
 
         // 클래스 자료형
-        Rectangle r1 = new Rectangle(12.5 , 22.5);
+        Rectangle r1 = new Rectangle(12.5, 22.5);
 
         System.out.println("인자로 전달하는 값 :" + r1);
         pt.testClassTypeParameter(r1);
@@ -44,5 +44,14 @@ public class Application {
         System.out.println("=============== 변경 후 사각형의 넓이와 둘레 ===============");
         r1.calcArea(); // 넓이 출력
         r1.calcRound(); // 둘레 출력
+
+        // 가변인자
+//        pt.testVariableLengthArrayParameter();
+        pt.testVariableLengthArrayParameter("홍길동"); // 가변인자가 전달되지 않아도괜찮음
+        pt.testVariableLengthArrayParameter("홍길동", "볼링"); // 1개 가능
+        pt.testVariableLengthArrayParameter("홍길동", "볼링", "당구");
+        pt.testVariableLengthArrayParameter("신사임당", new String[] {"테니스", "서예"}); // 배열도 가능
+
+
     }
 }
