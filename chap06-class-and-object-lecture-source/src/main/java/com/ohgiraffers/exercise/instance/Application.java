@@ -22,5 +22,24 @@ public class Application {
         dog1.setKinds("푸들");
 
         System.out.println(dog1.getInfo());
+
+        Laptop laptop = new Laptop();
+
+        laptop.setBrand("Dell");
+        laptop.setModel("XPS 13");
+        laptop.setRamStorage("16GB");
+        laptop.setSsdStorage("512GB");
+        System.out.println(laptop.getInfo());
+
+        Book book = new Book();
+
+        book.setBookName("Effectiva Java");
+        book.setWriter("Joshua Bloch");
+        book.setPageNumber(416);
+        book.setCoverOption("하드커버");
+        System.out.println(book.bookGetInfo());
+
+
+
     }
 }
