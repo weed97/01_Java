@@ -39,7 +39,22 @@ public class Application {
         book.setCoverOption("하드커버");
         System.out.println(book.bookGetInfo());
 
+        Person person = new Person();
+        person.setAge(30);
+        person.setName("James");
+        person.setGender('남');
+        person.setMaritalStatus("기혼");
+        person.setChild("3명");
 
+        System.out.println(person.getInfo());
+
+        Car car = new Car();
+
+        car.setModelName("Tesla Model S");
+        car.setModelYear(2022);
+        car.setEngine("전기차");
+
+        System.out.println(car.getInfo());
 
     }
 }
