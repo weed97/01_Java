@@ -28,6 +28,6 @@ public class Laptop {
     }
 
     public String getInfo() {
-        return "브랜드명은 " + brand + "입니다." + "모덺명은 " + model + "입니다." + "램용량은" + ramStorage + "입니다. " + "SSD용량은" + ssdStorage + "입니다.";
+        return "브랜드명은 " + this.brand + "입니다." + "모덺명은 " + this.model + "입니다." + "램용량은" + this.ramStorage + "입니다. " + "SSD용량은" + this.ssdStorage + "입니다.";
     }
 }
