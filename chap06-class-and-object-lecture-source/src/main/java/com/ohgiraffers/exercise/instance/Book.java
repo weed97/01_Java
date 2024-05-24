@@ -25,7 +25,7 @@ public class Book {
 
 
     public String bookGetInfo() {
-        return "북 저자는 " + writer + "입니다" + "북 이름은 " + bookName + "입니다" + "페이지수는 " + pageNumber +"입니다." +"커버종류는 " +coverOption + "입니다." ;
+        return "북 저자는 " + this.writer + "입니다" + "북 이름은 " + this.bookName + "입니다" + "페이지수는 " + this.pageNumber +"입니다." +"커버종류는 " +this.coverOption + "입니다." ;
 
     }
 
