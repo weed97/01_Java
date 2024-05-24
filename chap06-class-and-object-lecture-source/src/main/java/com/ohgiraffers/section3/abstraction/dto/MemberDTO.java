@@ -57,6 +57,10 @@ public class MemberDTO {
     // 접근자 메서드
 
 
+    public int getNumber() {
+        return number;
+    }
+
     public String getName() {
         return name;
     }
