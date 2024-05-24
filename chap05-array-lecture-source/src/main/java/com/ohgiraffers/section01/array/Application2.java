@@ -16,11 +16,11 @@ public class Application2 {
         /*
          * 배열의 선언
          *
-         * 자요형[] 벼누명;
+         * 자요형[] 변수명;
          * 자료형 변수명[]'
          * */
 
-        // statck에 배열의 주소를 보관할 수 있는 공간을 만드는 것
+        // stack에 배열의 주소를 보관할 수 있는 공간을 만드는 것
         int[] iarr;
         char carr[];
 
@@ -61,7 +61,7 @@ public class Application2 {
 
         double[] darr = new double[size];
 
-        System.out.println("darrd의 hashcoe : " + darr.length);
+        System.out.println("darrd의 hashcode : " + darr.length);
         System.out.println("darr의 길이 = " + darr.length);
 
         // 한번 지정한 배열의 크기는 변경하지 못한다.
