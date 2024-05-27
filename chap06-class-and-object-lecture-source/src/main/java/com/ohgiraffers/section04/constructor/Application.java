@@ -25,7 +25,7 @@ public class Application {
         User user3 = new User("user02", "pass02", "강진영", new java.util.Date());
         System.out.println(user3.getInfo());
 
-        // 복사 생성자를 호출 인스턴스(객ㅊ) 생성
+        // 복사 생성자를 호출 인스턴스(객체) 생성
 
         User user4 = new User(user3);
         System.out.println(user4.getInfo());
