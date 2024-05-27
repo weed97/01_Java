@@ -70,8 +70,8 @@ public class Member {
     // 필드값 조회용 메서드
     public String getInformation() {
         return "Member [num = " + num + ", id = " + id +
-                ", pwd =" + pwd + ", name = " + name + ", " +
-                "age =" + age + ", gender = " + gender;
+                ", pwd =" + pwd + ", name = " + name +
+                ", age =" + age + ", gender = ]" + gender;
 
 
 
