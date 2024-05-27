@@ -39,6 +39,7 @@ public class Application {
         book.setCoverOption("하드커버");
         System.out.println(book.bookGetInfo());
 
+
         Person person = new Person();
         person.setAge(30);
         person.setName("James");
@@ -55,6 +56,8 @@ public class Application {
         car.setEngine("전기차");
 
         System.out.println(car.getInfo());
+
+
 
     }
 }
