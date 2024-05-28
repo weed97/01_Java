@@ -33,6 +33,6 @@ public class Application {
 //        System.out.println(computer2.getInformation());
 
         // Computer의 부모필드도 함꼐 초기화하는 생성자로 인스턴스 새엉
-        Computer computer3 = new Computer("S-01234","삼성","갤럭시Z폴드",2398000,new java.util.Date()),"퀄컴 스냅드래곤", 512, 12, "안드로이드");
+        Computer computer3 = new Computer("S-01234","삼성","갤럭시Z폴드",2398000,new java.util.Date(),"퀄컴 스냅드래곤", 512, 12, "안드로이드");
     }
 }

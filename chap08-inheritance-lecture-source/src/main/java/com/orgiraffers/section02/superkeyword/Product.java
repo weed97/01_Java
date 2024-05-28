@@ -15,10 +15,20 @@ public class Product {
 
     public Product() {
 
+        System.out.println("Product 클래스의 기본생성자 호출함...");
+    }
+
+    public Product(String code, String brand, String name, int price, Date manufacturingDate) {
+
+        super();
+        this.code = code;
         this.brand = brand;
-        this.brand = brand;
-        this.brand = brand;
-        this.brand = brand;
+        this.name = name;
+        this.price = price;
+        this.manufacturingDate = manufacturingDate;
+
+        System.out.println("Product 클래스의 매개변수 있는 생성자 호출함...");
+
     }
 
     public String getCode() {
@@ -59,19 +69,6 @@ public class Product {
 
     public void setManufacturingDate(Date manufacturingDate) {
         manufacturingDate = manufacturingDate;
-    }
-
-    public Product(String code, String brand, String name, int price, Date manufacturingDate) {
-
-        super();
-        this.code = code;
-        this.brand = brand;
-        this.name = name;
-        this.price = price;
-        this.manufacturingDate = manufacturingDate;
-
-        System.out.println("Product 클래스의 매개변수 있는 생성자 호출함...");
-
     }
 
     public String getInformation() {

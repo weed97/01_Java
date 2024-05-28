@@ -8,7 +8,7 @@ public class Computer extends Product {
 
     private String cpu;             //cpu
     private int hdd;                //하드디스크 용량
-    private String ram;             //램 용량
+    private int ram;             //램 용량
     private String operationSystem; //운영체제
 
     public Computer() {
@@ -18,7 +18,7 @@ public class Computer extends Product {
 
     }
 
-    public Computer ( String cpu, int hdd, String ram, String operationSystem) {
+    public Computer ( String cpu, int hdd, int ram, String operationSystem) {
         super();
         this.cpu = cpu;
         this.hdd = hdd;
@@ -26,8 +26,8 @@ public class Computer extends Product {
         this.operationSystem = operationSystem;
     }
 
-    public Computer(String code, String brand, String name, int price, Date ManufacturingDate, String cpu, int hdd, String ram, String operationSystem) {
-        super(code, brand, name, price, ManufacturingDate);
+    public Computer(String code, String brand, String name, int price, Date manufacturingDate, String cpu, int hdd, int ram, String operationSystem) {
+        super(code, brand, name, price, manufacturingDate);
         this.cpu = cpu;
         this.hdd = hdd;
         this.ram = ram;
