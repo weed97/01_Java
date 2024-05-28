@@ -54,7 +54,7 @@ public class Computer extends Product {
 
     /*
     * super.getInformation() : 정상적으로 부모의 메소드를 호출
-    * this.getInformation() : w재귀호출이 일어나면 stackOverFlow 발생
+    * this.getInformation() : 재귀호출이 일어나면 stackOverFlow 발생
     * getInformation(0 : this. 이 자동으로 추가되어서 재귀호출일어남
     *
     * => 부모클래스에 있는 메소드를 사용하고 싶다면 super. 을 명시해주는게 좋다

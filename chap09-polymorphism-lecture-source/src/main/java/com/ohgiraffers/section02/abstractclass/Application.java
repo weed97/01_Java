@@ -25,6 +25,42 @@ public class Application {
         * 예) public abstract void method();
         * */
 
+        // 추상클래스는 인스턴스 직접 생성 불가
+        // Product product = new Product();
+
+        // 추상메서드, 클래스를 사용하기 위해서는 추상클래스를 상속받은 객체를 이용해야한다.
+        SmartPhone smartPhone = new SmartPhone();
+
+        System.out.println(smartPhone instanceof SmartPhone);
+        System.out.println(smartPhone instanceof Product);
+
+        // 다형성을 적용해서 추상클래스를 레퍼런스 타입으로 활용 가능
+        Product product = new SmartPhone();
+
+        // 동적 바인딩에 의해 SmartPhone 메소드가 호출된다.
+        product.absMethod();
+
+        // 추상클래스가 가진 메서드도 호출 가능
+        product.nonStaticMethod();
+
+        Product.staticMethod(); // 인스턴스 생성이 불필요
+
+        /*
+        * 추상클래스 사용하는 이유
+        * 추상클래스의 추상메서드는 오버라이딩에 대한 강제성이 부여된다.
+        * => 여러 클래스들을 그룹화 해서 필수 기능을 정의해 강제성을 부여하고
+        *    개발시 일관된 인터페이스를 제공 할 수 있다.
+        *
+        * 하지만 다른 클래스를 상속 받고 있는 클래스를 작성할떄는, 추상클래스를 추가로
+        * 상속이 불가능하다.
+        * => 추상클래스보다 더 강제성이 강한 인터페이스(interface)라는 메커니즘을 제공한다.
+        * */
+
+
+
+
+
+        }
 
     }
-}
+
