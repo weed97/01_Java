@@ -40,11 +40,19 @@ public class Application4 {
         * */
 
         String str = "java^oracle^jdbc";
+        String str1 = "java$oracle$jdbc";
+
         String[] sarr = str.split("\\^");
+        String[] sarr1 = str1.split("\\$");
+
 
 
         for (String s : sarr) {
             System.out.println(s);
+        }
+
+        for (String s1 : sarr1) {
+            System.out.println(s1);
         }
 
     }

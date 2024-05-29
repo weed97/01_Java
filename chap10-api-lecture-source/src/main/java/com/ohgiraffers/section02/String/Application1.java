@@ -116,5 +116,7 @@ public class Application1 {
 
         String nullStr = null;
        // System.out.println("isEmpty(0 = " + nullStr.isEmpty()); // nullPointException
+
+
     }
 }
