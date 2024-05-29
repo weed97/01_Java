@@ -20,11 +20,17 @@ public class Application1 {
 
         Book book1 = new Book(1, "홍길동전", "허균", 50000);
         Book book2 = new Book(2, "목민심서", "정약욕", 30000);
-        Book book3 = new Book(3, "목민심서", "정약용", 30000);
+        Book book3 = new Book(2, "목민심서", "정약용", 30000);
+
 
         System.out.println("book1.toString = " + book1.toString());
         System.out.println("book2.toString = " + book2.toString());
         System.out.println("book3.toString = " + book3.toString());
+
+        System.out.println("================= toString 오버라이딩 이후 =================");
+        System.out.println("boo1 = " + book1);
+        System.out.println("boo2 = " + book2);
+        System.out.println("boo3 = " + book3);
 
     }
 }
