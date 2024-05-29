@@ -94,11 +94,11 @@ public class Application1 {
 
         // 클래스의 업케스팅과 다운캐스팅
         /*
-        * 클래스의 형변환을 up-casting 과 down-casting으로 구분할 수 있다.
-        * up-casting : 상위 타입으로 형변환 -> 부모 클래스로 형변환
-        * down-casting : 하위 타입으로 형변환 -> 자식 클래스로 형변환
-        * 작성 여부에 따라 명시적과 묵시적으로 구분된다.
-        * */
+         * 클래스의 형변환을 up-casting 과 down-casting으로 구분할 수 있다.
+         * up-casting : 상위 타입으로 형변환 -> 부모 클래스로 형변환
+         * down-casting : 하위 타입으로 형변환 -> 자식 클래스로 형변환
+         * 작성 여부에 따라 명시적과 묵시적으로 구분된다.
+         * */
         // 묵시적 형변환 -> up-casting의 경우 적용됨
         Animal animal1 = (Animal) new Rabbit(); // up-casting 명시적 형변환
         Animal animal2 = (Animal) new Rabbit(); // up-casting 묵시적 형변환

@@ -34,10 +34,11 @@ public class Product implements InterProduct{
 //
 //    }
 
-//    @Override
-//    public void defaultMethod() {
-//        System.out.println("Product 클래스의 defaultMethod 호출됨...");
-//    }
+    @Override
+    public void defaultMethod() {
+
+        System.out.println("Product 클래스의 defaultMethod 호출됨...");
+    }
 
 
 }
