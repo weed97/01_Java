@@ -15,28 +15,36 @@ public class Application3 {
         * */
 
         String emp1 = "100, 홍길동, 서울, 영업부";      // 모든값 존재
-        String emp2 = "200, 유관순 ... 총무부";        // 주소값 없음
+        String emp2 = "200, 유관순, ... 총무부";        // 주소값 없음
         String emp3 = "300, 이순신, 경기도.";          // 부서 없음
 
         String[] empArr1 = emp1.split(",");
         String[] empArr2 = emp2.split(",");
         String[] empArr3 = emp3.split(",");
 
-        System.out.println(" ============== empArr1 ================");
+        System.out.println(" ============== empArr1 ================"); // 정상 출력됨
         for (int i = 0; i < empArr1.length; i++) {
             System.out.println("empArr1[" + i + "] : " + empArr1[i]);
 
         }
-        System.out.println(" ============== empArr2 ================");
+        System.out.println(" ============== empArr2 ================"); // 중간값이 출력이 안됨
         for (int i = 0; i < empArr2.length; i++) {
             System.out.println("empArr2[" + i + "] : " + empArr2[i]);
 
         }
-        System.out.println(" ============== empArr3 ================");
+        System.out.println(" ============== empArr3 ================"); // 마지막값이 출력이 안됨
         for (int i = 0; i < empArr3.length; i++) {
             System.out.println("empArr3[" + i + "] : " + empArr3[i]);
 
         }
+
+        String[] empArr4 = emp3.split(",", -1);
+        System.out.println(" ============== empArr4 ================"); // 마지막값이 출력이 안됨
+        for (int i = 0; i < empArr4.length; i++) {
+            System.out.println("empArr4[" + i + "] : " + empArr4[i]);
+
+        }
+
     }
 
 }
