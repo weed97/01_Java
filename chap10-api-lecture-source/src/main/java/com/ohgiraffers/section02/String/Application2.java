@@ -35,10 +35,10 @@ public class Application2 {
         System.out.println("str1 == str2 " + (str1 == str2));
 
         /*
-        * equals(0 : String 클래스의 equals() 메소드는 인스턴스 비교가 아닌 문자열 값을 비교해서
+        * equals() : String 클래스의 equals() 메소드는 인스턴스 비교가 아닌 문자열 값을 비교해서
         *            동일한 값을 가지는 경우 ture, 다른 값을 가지는 경우 false를 반환하도록
         *            Object의 equals() 메소드를 재정의(Overriding) 해두었다.
-        *            따라서 문자열 ㄹ인스턴스 생성 방식과 상관없이 동일한 문자열인 지 비교하기 위해서는
+        *            따라서 문자열 인스턴스 생성 방식과 상관없이 동일한 문자열인 지 비교하기 위해서는
         *            == 연산 대신에 equals()메소드를 사용해야 한다.
         * */
 
