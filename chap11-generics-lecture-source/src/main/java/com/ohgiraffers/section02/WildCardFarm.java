@@ -12,7 +12,7 @@ public class WildCardFarm {
     }
 
     // Bunny이거나 Bunny를 상속받은 토끼농장만 사용가능
-    public void extesdsType(RabbitFarm<? extends Bunny> farm ) {
+    public void extendsType(RabbitFarm<? extends Bunny> farm ) {
 
         farm.getAnimal().cry();
     }

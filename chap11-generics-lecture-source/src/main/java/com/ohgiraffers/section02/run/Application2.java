@@ -31,20 +31,20 @@ public class Application2 {
         wildCardFarm.anyType(new RabbitFarm<Bunny>(new Bunny()));
         wildCardFarm.anyType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
 
-        //  extends Buunny이기 때문에 Bunny이거나 Bunny의 후손 토끼농장만 매개변수로 사용가능
+        //  extends Bunny이기 때문에 Bunny이거나 Bunny의 후손 토끼농장만 매개변수로 사용가능
         // 상위타입으로 만든 토끼농장은 매개변수로사용 불가능
-        // wildCardFarm.extesdsType(new RabbitFarm<>(new Rabbit()));
+        // wildCardFarm.extendsType(new RabbitFarm<>(new Rabbit()));
 
         System.out.println("=================== <? extends Bunny> ======================");
-        wildCardFarm.extesdsType(new RabbitFarm<Bunny>(new Bunny()));
-        wildCardFarm.extesdsType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
+        wildCardFarm.extendsType(new RabbitFarm<Bunny>(new Bunny()));
+        wildCardFarm.extendsType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
 
         System.out.println("=================== <? super Bunny> ======================");
         // extends Bunny의 <? super> 이기 때문에 Bunny이거나 Bunny 상위 토끼농장만 매개면수로 사용가능
         // 후손타입으로 만든 토끼농장은매개변수로 사용 불가능
         wildCardFarm.superType(new RabbitFarm<>(new Rabbit()));
         wildCardFarm.superType(new RabbitFarm<>(new Bunny()));
-        // wildCardFarm.superType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny()));
+         // wildCardFarm.superType(new RabbitFarm<DrunkenBunny>(new DrunkenBunny());
 
 
 
