@@ -1,7 +1,9 @@
 package com.ohgiraffers.section02.set.run;
 
-import java.util.Iterator;
-import java.util.TreeSet;
+import java.util.*;
+//import java.util.Iterator;
+//import java.util.TreeSet;
+//import java.util.Set;
 
 // TreeSet
 public class Application3 {
@@ -32,13 +34,14 @@ public class Application3 {
         // next() : 다음 값을 가져오는
 
         while (iter.hasNext()) {
-            System.out.println((String)iter.next());
+            System.out.println(((String)iter.next()).toUpperCase());
         }
         System.out.println("================ 배열을 이용 ==================");
         Object[] arr =tSet.toArray();
 
         for (Object obj : arr) {
-            System.out.println((String)obj).toUpperCase());
+            System.out.println(((String)obj).toUpperCase());
         }
+
     }
 }

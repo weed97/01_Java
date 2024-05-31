@@ -38,11 +38,8 @@ public class Application4 {
         System.out.println("que = " + que);
 
 
-        /*
-        * 저장된 객체를 한개씩 꺼내는 기능이 없다.
-        * 반복문을 이용해서 연속처리하는 방법
-        * */
-        Math
+
+
     }
 
 }
