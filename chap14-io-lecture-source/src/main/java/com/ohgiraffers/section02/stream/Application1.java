@@ -58,11 +58,31 @@ public class Application1 {
             // 메소드의 인자로 byte 배열을 넣으면
             // 파일을 읽어서 byte 배열로 반환을해준다.
             fin.read(bar);
-            
+
+            for (int i = 0; i < bar.length; i++) {
+                System.out.println((char) bar[i]);
+
+            }
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             throw new RuntimeException(e);
+        } finally {
+
+            if (fin != null) {
+                try {
+
+                    /*
+                    * 자원을 반납을 하지 않으면(스트립을 닫지않으면), 장기간 실행중인 프로그램의 경우, 다양한 자원에서 누수(leak)가 발생한다.
+                    * 버퍼를 이용하는 경우 마지막 flush()로 버퍼에 남아있는 데이터를 강제로 전송해야한다.
+                    * 잔류데이터가 남는 상황에서 추가로 스트림을 사용하면, 데드락(DeadLock) 교착상태가된다.
+                    * */
+                    fin.close();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
 
     }
