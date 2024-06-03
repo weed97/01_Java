@@ -39,8 +39,17 @@ public class Application1 {
 
         // 중복 확인
         hMap.put(12, "yellow banana");
+        hMap.put(13, "yellow banana");
+        hMap.put(14, "yellow banana");
+        
         System.out.println("hMap : " + hMap);
-
+        
+        hMap.remove(13, "yellow banana");
+        hMap.remove(14, "yellow banana");
+        System.out.println("hMap = " + hMap);
+        
+        // 저장된 객체수 확인
+        System.out.println("hMap에 저장된 객체 수 : " + hMap.size());
 
     }
 
