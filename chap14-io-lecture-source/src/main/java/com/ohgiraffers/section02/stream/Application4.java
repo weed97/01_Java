@@ -4,16 +4,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class Application4 {
-    // FileWriter
+//     FileWriter
     public static void main(String[] args) {
 
-        /*
-        * FileWriter
-        * 프로그램의 데이터를 파일로 내보내기 위한 용도의 스트림
-        * character (1글자) 단위로 데이터를 처리한다.
-        * */
+//        /*
+//        * FileWriter
+//        * 프로그램의 데이터를 파일로 내보내기 위한 용도의 스트림
+//        * character (1글자) 단위로 데이터를 처리한다.
+//        * */
 
-        FileWriter fw = null;
+            FileWriter fw = null;
 
         try {
 
